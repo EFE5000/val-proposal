@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Be My Valentine, Folulope!</title>
     <style>
         body {
             background: linear-gradient(120deg, #ffb6c1 0%, #ffe4e1 100%);
-=======
-    <title>Yayyy Iyawo Mi!</title>
-    <style>
-        body {
-            background: linear-gradient(120deg, #ffe4e1 0%, #ffb6c1 100%);
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -22,7 +15,6 @@
             margin: 0;
             font-family: 'Segoe UI', cursive, sans-serif;
         }
-<<<<<<< HEAD
         .card {
             background: white;
             border-radius: 24px;
@@ -30,22 +22,12 @@
             padding: 32px 24px;
             text-align: center;
             max-width: 400px;
-=======
-        .celebrate {
-            text-align: center;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 8px 32px rgba(255, 105, 180, 0.2);
-            padding: 40px 30px;
-            max-width: 420px;
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
             animation: popIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
         }
         @keyframes popIn {
             0% { transform: scale(0.7); opacity: 0; }
             100% { transform: scale(1); opacity: 1; }
         }
-<<<<<<< HEAD
         .photo {
             width: 220px;
             height: 220px;
@@ -89,44 +71,26 @@
         }
         .button:hover {
             background: #ff69b4;
-=======
-        .big-heart {
-            margin: 0 auto 24px auto;
-            display: block;
-            width: 120px;
-            height: 120px;
-            animation: bounce 1.2s infinite;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-40px) scale(1.1); }
-            50% { transform: translateY(0) scale(1); }
-            70% { transform: translateY(-20px) scale(1.05); }
-        }
-        h1 {
-            color: #e75480;
-            font-size: 2.2em;
-            margin-bottom: 10px;
-        }
-        .confetti {
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            pointer-events: none;
-            z-index: 10;
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
         }
     </style>
 </head>
 <body>
-<<<<<<< HEAD
     <div class="card">
         <img src="photo/soulmates.JPG" alt="Us" class="photo">
         <h1>Dear Folulope,</h1>
         <p>
             From the moment we met, my world has been brighter and my heart fuller.<br>
             Will you make this Valentine’s Day unforgettable and be my Valentine?
-        </div>
-        <script src="./script.js"></script>
+        </p>
+        <div class="heart">❤️</div>
+        <button class="button" id="sayYesBtn">Say Yes!</button>
+        <div id="jumping-heart" style="display:none; position:relative;">
+            <svg width="80" height="80" viewBox="0 0 80 80">
+                <g id="heart-shape">
+                    <path d="M40 70 Q10 40 30 25 Q40 15 50 25 Q70 40 40 70 Z" 
+                          fill="#e75480" stroke="#c2185b" stroke-width="2"></path>
+                    <ellipse cx="33" cy="28" rx="5" ry="7" fill="#fff" opacity="0.2"></ellipse>
+                </g>
             </svg>
         </div>
     </div>
@@ -151,66 +115,8 @@
                     window.location.href = 'yay.html';
                 }, 1000);
             };
-=======
-    <canvas class="confetti"></canvas>
-    <div class="celebrate">
-        <svg class="big-heart" viewBox="0 0 80 80">
-            <path d="M40 70 Q10 40 30 25 Q40 15 50 25 Q70 40 40 70 Z" fill="#e75480" stroke="#c2185b" stroke-width="3"/>
-            <ellipse cx="33" cy="28" rx="7" ry="10" fill="#fff" opacity="0.18"/>
-        </svg>
-        <h1>yayyy iyawo mi!</h1>
-        <p style="color:#444;font-size:1.2em;">You’ve made me the happiest!<br>Can’t wait for our Valentine’s Day together. 💖</p>
-    </div>
-    <script>
-        // Simple confetti animation
-        const canvas = document.querySelector('.confetti');
-        const ctx = canvas.getContext('2d');
-        let W = window.innerWidth, H = window.innerHeight;
-        canvas.width = W; canvas.height = H;
-        let confetti = [];
-        for(let i=0;i<80;i++){
-            confetti.push({
-                x: Math.random()*W,
-                y: Math.random()*H - H,
-                r: Math.random()*8+4,
-                d: Math.random()*80,
-                color: `hsl(${Math.random()*360},80%,70%)`,
-                tilt: Math.random()*10-5
-            });
-        }
-        function drawConfetti(){
-            ctx.clearRect(0,0,W,H);
-            for(let i=0;i<confetti.length;i++){
-                let c = confetti[i];
-                ctx.beginPath();
-                ctx.ellipse(c.x, c.y, c.r, c.r/2, c.tilt, 0, 2*Math.PI);
-                ctx.fillStyle = c.color;
-                ctx.fill();
-            }
-            updateConfetti();
-        }
-        function updateConfetti(){
-            for(let i=0;i<confetti.length;i++){
-                let c = confetti[i];
-                c.y += Math.cos(c.d) + 2 + c.r/6;
-                c.x += Math.sin(c.d) * 2;
-                c.d += 0.01;
-                if(c.y > H){
-                    c.y = -10;
-                    c.x = Math.random()*W;
-                }
-            }
-        }
-        setInterval(drawConfetti, 20);
-        window.addEventListener('resize',()=>{
-            W = window.innerWidth; H = window.innerHeight;
-            canvas.width = W; canvas.height = H;
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
         });
     </script>
 </body>
 </html>
-<<<<<<< HEAD
 
-=======
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
