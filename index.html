@@ -63,16 +63,9 @@
         </svg>
         <h1>yayyy iyawo mi!</h1>
         <p style="color:#444;font-size:1.2em;">You’ve made me the happiest!<br>Can’t wait for our Valentine’s Day together. 💖</p>
+    <button id="toValentineBtn" style="margin-top:32px;padding:16px 32px;font-size:1.2em;background:#ff69b4;color:white;border:none;border-radius:12px;cursor:pointer;box-shadow:0 2px 8px rgba(255,105,180,0.15);">Go to Valentine Surprise</button>
     </div>
-    <script>
-        // Simple confetti animation
-        const canvas = document.querySelector('.confetti');
-        const ctx = canvas.getContext('2d');
-        let W = window.innerWidth, H = window.innerHeight;
-        canvas.width = W; canvas.height = H;
-        let confetti = [];
-        for(let i=0;i<80;i++){
-            confetti.push({
+    <script src="./script.js"></script>
                 x: Math.random()*W,
                 y: Math.random()*H - H,
                 r: Math.random()*8+4,
