@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Be My Valentine, Folulope!</title>
-    <style>
-        body {
-            background: linear-gradient(120deg, #ffb6c1 0%, #ffe4e1 100%);
-=======
     <title>Yayyy Iyawo Mi!</title>
     <style>
         body {
             background: linear-gradient(120deg, #ffe4e1 0%, #ffb6c1 100%);
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -22,15 +15,6 @@
             margin: 0;
             font-family: 'Segoe UI', cursive, sans-serif;
         }
-<<<<<<< HEAD
-        .card {
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 8px 32px rgba(255, 105, 180, 0.2);
-            padding: 32px 24px;
-            text-align: center;
-            max-width: 400px;
-=======
         .celebrate {
             text-align: center;
             background: white;
@@ -38,58 +22,12 @@
             box-shadow: 0 8px 32px rgba(255, 105, 180, 0.2);
             padding: 40px 30px;
             max-width: 420px;
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
             animation: popIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
         }
         @keyframes popIn {
             0% { transform: scale(0.7); opacity: 0; }
             100% { transform: scale(1); opacity: 1; }
         }
-<<<<<<< HEAD
-        .photo {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 6px solid #ffb6c1;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 16px rgba(255, 182, 193, 0.3);
-        }
-        h1 {
-            color: #e75480;
-            margin-bottom: 12px;
-        }
-        p {
-            color: #444;
-            font-size: 1.2em;
-            margin-bottom: 24px;
-        }
-        .heart {
-            color: #e75480;
-            font-size: 2.5em;
-            animation: heartbeat 1.2s infinite;
-        }
-        @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            20% { transform: scale(1.2); }
-            40% { transform: scale(0.95); }
-            60% { transform: scale(1.1); }
-            80% { transform: scale(0.98); }
-        }
-        .button {
-            background: #e75480;
-            color: white;
-            border: none;
-            border-radius: 20px;
-            padding: 12px 32px;
-            font-size: 1.1em;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(231, 84, 128, 0.2);
-            transition: background 0.2s;
-        }
-        .button:hover {
-            background: #ff69b4;
-=======
         .big-heart {
             margin: 0 auto 24px auto;
             display: block;
@@ -113,45 +51,10 @@
             top: 0; left: 0; width: 100vw; height: 100vh;
             pointer-events: none;
             z-index: 10;
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
         }
     </style>
 </head>
 <body>
-<<<<<<< HEAD
-    <div class="card">
-        <img src="photo/soulmates.JPG" alt="Us" class="photo">
-        <h1>Dear Folulope,</h1>
-        <p>
-            From the moment we met, my world has been brighter and my heart fuller.<br>
-            Will you make this Valentine’s Day unforgettable and be my Valentine?
-        </div>
-        <script src="./script.js"></script>
-            </svg>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var button = document.getElementById('sayYesBtn');
-            var heart = document.getElementById('jumping-heart');
-            button.onclick = function() {
-                alert('Yay! I can’t wait to spend Valentine’s Day with you, Folulope! 💖');
-                heart.style.display = 'block';
-                heart.animate([
-                    { transform: 'translateY(0)' },
-                    { transform: 'translateY(-120px) scale(1.2)', offset: 0.4 },
-                    { transform: 'translateY(0) scale(1)', offset: 1 }
-                ], {
-                    duration: 900,
-                    easing: 'cubic-bezier(.68,-0.55,.27,1.55)'
-                });
-                setTimeout(function() {
-                    heart.style.display = 'none';
-                    window.location.href = 'yay.html';
-                }, 1000);
-            };
-=======
     <canvas class="confetti"></canvas>
     <div class="celebrate">
         <svg class="big-heart" viewBox="0 0 80 80">
@@ -205,12 +108,121 @@
         window.addEventListener('resize',()=>{
             W = window.innerWidth; H = window.innerHeight;
             canvas.width = W; canvas.height = H;
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
         });
     </script>
 </body>
 </html>
-<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine, Folulope!</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #ffb6c1 0%, #ffe4e1 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', cursive, sans-serif;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(255, 105, 180, 0.2);
+            padding: 32px 24px;
+            text-align: center;
+            max-width: 400px;
+            animation: popIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.7); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .photo {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #ffb6c1;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 16px rgba(255, 182, 193, 0.3);
+        }
+        h1 {
+            color: #e75480;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #444;
+            font-size: 1.2em;
+            margin-bottom: 24px;
+        }
+        .heart {
+            color: #e75480;
+            font-size: 2.5em;
+            animation: heartbeat 1.2s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            20% { transform: scale(1.2); }
+            40% { transform: scale(0.95); }
+            60% { transform: scale(1.1); }
+            80% { transform: scale(0.98); }
+        }
+        .button {
+            background: #e75480;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 32px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(231, 84, 128, 0.2);
+            transition: background 0.2s;
+        }
+        .button:hover {
+            background: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="photo/soulmates.JPG" alt="Us" class="photo">
+        <h1>Dear Folulope,</h1>
+        <p>
+            From the moment we met, my world has been brighter and my heart fuller.<br>
+            Will you make this Valentine’s Day unforgettable and be my Valentine?
+        </div>
+        <script src="./script.js"></script>
+            </svg>
+        </div>
+    </div>
 
-=======
->>>>>>> 1d4d0b1e68e7b4bbad7f79d24af6e5432ddf77cd
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var button = document.getElementById('sayYesBtn');
+            var heart = document.getElementById('jumping-heart');
+            button.onclick = function() {
+                alert('Yay! I can’t wait to spend Valentine’s Day with you, Folulope! 💖');
+                heart.style.display = 'block';
+                heart.animate([
+                    { transform: 'translateY(0)' },
+                    { transform: 'translateY(-120px) scale(1.2)', offset: 0.4 },
+                    { transform: 'translateY(0) scale(1)', offset: 1 }
+                ], {
+                    duration: 900,
+                    easing: 'cubic-bezier(.68,-0.55,.27,1.55)'
+                });
+                setTimeout(function() {
+                    heart.style.display = 'none';
+                    window.location.href = 'yay.html';
+                }, 1000);
+            };
+        });
+    </script>
+</body>
+</html>
+
