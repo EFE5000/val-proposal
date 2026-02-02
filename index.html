@@ -15,14 +15,50 @@
             margin: 0;
             font-family: 'Segoe UI', cursive, sans-serif;
         }
-        .celebrate {
+        .proposal {
             text-align: center;
             background: white;
             border-radius: 24px;
             box-shadow: 0 8px 32px rgba(255, 105, 180, 0.2);
-            padding: 40px 30px;
+            padding: 40px 30px 32px 30px;
             max-width: 420px;
-            animation: popIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+            margin-top: 32px;
+        }
+        .big-heart {
+            margin: 0 auto 18px auto;
+            display: block;
+            width: 90px;
+            height: 90px;
+            animation: bounce 1.2s infinite;
+        }
+        .soulmate-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #ffb6c1;
+            margin-bottom: 22px;
+            box-shadow: 0 4px 16px rgba(255,182,193,0.3);
+        }
+        .love-letter {
+            color: #444;
+            font-size: 1.15em;
+            margin-bottom: 28px;
+        }
+        .button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 14px 40px;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(231,84,128,0.18);
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .button:hover {
+            background: #e75480;
         }
         @keyframes popIn {
             0% { transform: scale(0.7); opacity: 0; }
@@ -57,12 +93,20 @@
 <body>
 
     <div class="proposal">
+        <!-- Heart Icon -->
         <svg class="big-heart" viewBox="0 0 80 80">
             <path d="M40 70 Q10 40 30 25 Q40 15 50 25 Q70 40 40 70 Z" fill="#e75480" stroke="#c2185b" stroke-width="3"/>
             <ellipse cx="33" cy="28" rx="7" ry="10" fill="#fff" opacity="0.18"/>
         </svg>
         <h1>Be My Valentine?</h1>
-        <p style="color:#444;font-size:1.2em;">Will you make this Valentine’s Day unforgettable and be my Valentine?</p>
+        <!-- Circular soulmate image -->
+        <img src="photo/soulmates.JPG" alt="Us" class="soulmate-img">
+        <!-- Love letter -->
+        <div class="love-letter">
+            <p style="margin:0 0 12px 0;">Dear Folulope,</p>
+            <p style="margin:0;">From the moment we met, my world has been brighter and my heart fuller. Thank you for being my best friend, my love, and my everything. Will you make this Valentine’s Day unforgettable and be my Valentine?</p>
+        </div>
+        <!-- Yes Button -->
         <button id="sayYesBtn" class="button">Yes</button>
     </div>
     <script src="./script.js"></script>
